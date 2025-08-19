@@ -1,0 +1,148 @@
+{
+  "hotel_id": "HTL-001",
+  "name": "サンプル温泉ホテル",
+  "coord_system": { "unit": "virtual", "width": 100, "height": 100, "note": "左上(0,0), 右下(100,100)" },
+  "floors": [
+    {
+      "code": "B2",
+      "name": "地下2階",
+      "access": "staff_only",
+      "notes": "倉庫・バックヤード（案内不要）",
+      "zones": [],
+      "facilities": [],
+      "rooms": []
+    },
+    {
+      "code": "B1",
+      "name": "地下1階",
+      "access": "guest",
+      "zones": [
+        { "id": "B1-Z1", "name": "大浴場ゾーン", "rect": { "x": 5, "y": 10, "w": 90, "h": 55 } },
+        { "id": "B1-Z2", "name": "アミューズメントゾーン", "rect": { "x": 5, "y": 70, "w": 90, "h": 25 } }
+      ],
+      "facilities": [
+        { "id": "B1-SPA-M", "type": "spa", "name": "大浴場（男湯）", "zone": "B1-Z1", "rect": { "x": 5, "y": 10, "w": 42, "h": 55 }, "hours": "06:00-10:00 / 15:00-24:00" },
+        { "id": "B1-SPA-F", "type": "spa", "name": "大浴場（女湯）", "zone": "B1-Z1", "rect": { "x": 53, "y": 10, "w": 42, "h": 55 }, "hours": "06:00-10:00 / 15:00-24:00" },
+        { "id": "B1-KARA", "type": "karaoke", "name": "カラオケルーム", "zone": "B1-Z2", "rect": { "x": 5, "y": 70, "w": 44, "h": 25 }, "hours": "15:00-24:00" },
+        { "id": "B1-BILL", "type": "billiards", "name": "ビリヤード", "zone": "B1-Z2", "rect": { "x": 51, "y": 70, "w": 44, "h": 25 }, "hours": "15:00-24:00" }
+      ],
+      "poi": [
+        { "id": "B1-ELV", "type": "elevator", "name": "エレベーター", "point": { "x": 95, "y": 50 } },
+        { "id": "B1-STA", "type": "stairs", "name": "階段", "point": { "x": 95, "y": 60 } }
+      ],
+      "rooms": []
+    },
+    {
+      "code": "1F",
+      "name": "1階（エントランス）",
+      "access": "guest",
+      "zones": [
+        { "id": "1F-Z1", "name": "エントランス&ロビー", "rect": { "x": 0, "y": 0, "w": 100, "h": 40 } },
+        { "id": "1F-Z2", "name": "受付・フロント", "rect": { "x": 0, "y": 40, "w": 60, "h": 30 } },
+        { "id": "1F-Z3", "name": "お土産コーナー", "rect": { "x": 60, "y": 40, "w": 40, "h": 30 } },
+        { "id": "1F-Z4", "name": "待合スペース", "rect": { "x": 0, "y": 70, "w": 100, "h": 30 } }
+      ],
+      "facilities": [
+        { "id": "1F-FRT", "type": "front", "name": "フロント", "zone": "1F-Z2", "rect": { "x": 0, "y": 40, "w": 60, "h": 30 }, "hours": "24時間" },
+        { "id": "1F-SHP", "type": "shop", "name": "お土産コーナー", "zone": "1F-Z3", "rect": { "x": 60, "y": 40, "w": 40, "h": 30 }, "hours": "08:00-21:00" },
+        { "id": "1F-LOB", "type": "lobby", "name": "ロビーラウンジ", "zone": "1F-Z4", "rect": { "x": 0, "y": 70, "w": 100, "h": 30 } }
+      ],
+      "poi": [
+        { "id": "1F-ELV", "type": "elevator", "name": "エレベーター", "point": { "x": 95, "y": 50 } },
+        { "id": "1F-ENT", "type": "entrance", "name": "エントランス", "point": { "x": 50, "y": 0 } }
+      ],
+      "rooms": []
+    },
+    {
+      "code": "2F",
+      "name": "2階（ダイニング・宴会）",
+      "access": "guest",
+      "zones": [
+        { "id": "2F-Z1", "name": "グランドダイニング（ビュッフェ）", "rect": { "x": 0, "y": 0, "w": 100, "h": 60 } },
+        { "id": "2F-Z2", "name": "宴会場エリア（和式）", "rect": { "x": 0, "y": 60, "w": 100, "h": 40 } }
+      ],
+      "facilities": [
+        { "id": "2F-DIN", "type": "dining_hall", "name": "グランドダイニング", "zone": "2F-Z1", "rect": { "x": 0, "y": 0, "w": 100, "h": 60 }, "style": "ビュッフェ" },
+        { "id": "2F-BAN-M", "type": "banquet", "name": "松の間", "zone": "2F-Z2", "rect": { "x": 0, "y": 60, "w": 33, "h": 40 }, "style": "和式" },
+        { "id": "2F-BAN-T", "type": "banquet", "name": "竹の間", "zone": "2F-Z2", "rect": { "x": 33, "y": 60, "w": 34, "h": 40 }, "style": "和式" },
+        { "id": "2F-BAN-U", "type": "banquet", "name": "梅の間", "zone": "2F-Z2", "rect": { "x": 67, "y": 60, "w": 33, "h": 40 }, "style": "和式" }
+      ],
+      "poi": [
+        { "id": "2F-ELV", "type": "elevator", "name": "エレベーター", "point": { "x": 95, "y": 50 } }
+      ],
+      "rooms": []
+    },
+    {
+  "code": "3F",
+  "name": "3階（客室）",
+  "zones": [
+    { "id": "3F-EAST", "name": "東ウィング", "rect": { "x": 0,  "y": 0,  "w": 50, "h": 100 } },
+    { "id": "3F-WEST", "name": "西ウィング", "rect": { "x": 50, "y": 0,  "w": 50, "h": 100 } },
+    { "id": "3F-COR-E", "name": "東廊下",     "rect": { "x": 24, "y": 0,  "w": 8,  "h": 100 } },
+    { "id": "3F-COR-W", "name": "西廊下",     "rect": { "x": 70, "y": 0,  "w": 8,  "h": 100 } }
+  ],
+  "poi": [
+    { "id": "3F-ELV", "type": "elevator", "name": "エレベーター", "point": { "x": 95, "y": 50 } },
+    { "id": "3F-STA", "type": "stairs",   "name": "階段",         "point": { "x": 5,  "y": 50 } }
+  ],
+  "rooms": [
+    { "room": "301", "type": "suite",             "wing": "EAST", "beds": "king",   "capacity": 3, "smoking": false, "rect": { "x": 2,  "y": 5,  "w": 20, "h": 20 } },
+    { "room": "302", "type": "standard_twin",     "wing": "EAST", "beds": "twin",   "capacity": 2, "smoking": false, "rect": { "x": 2,  "y": 27, "w": 20, "h": 12 } },
+    { "room": "303", "type": "standard_double",   "wing": "EAST", "beds": "double", "capacity": 2, "smoking": false, "rect": { "x": 2,  "y": 41, "w": 20, "h": 12 } },
+    { "room": "304", "type": "standard_twin",     "wing": "EAST", "beds": "twin",   "capacity": 2, "smoking": true,  "rect": { "x": 2,  "y": 55, "w": 20, "h": 12 } },
+    { "room": "305", "type": "standard_double",   "wing": "EAST", "beds": "double", "capacity": 2, "smoking": false, "rect": { "x": 2,  "y": 69, "w": 20, "h": 12 } },
+
+    { "room": "306", "type": "standard_twin",     "wing": "WEST", "beds": "twin",   "capacity": 2, "smoking": false, "rect": { "x": 78, "y": 10, "w": 20, "h": 12 } },
+    { "room": "307", "type": "standard_double",   "wing": "WEST", "beds": "double", "capacity": 2, "smoking": false, "rect": { "x": 78, "y": 24, "w": 20, "h": 12 } },
+    { "room": "308", "type": "standard_twin",     "wing": "WEST", "beds": "twin",   "capacity": 2, "smoking": true,  "rect": { "x": 78, "y": 38, "w": 20, "h": 12 } },
+    { "room": "309", "type": "standard_double",   "wing": "WEST", "beds": "double", "capacity": 2, "smoking": false, "rect": { "x": 78, "y": 52, "w": 20, "h": 12 } },
+    { "room": "310", "type": "standard_twin",     "wing": "WEST", "beds": "twin",   "capacity": 2, "smoking": false, "rect": { "x": 78, "y": 66, "w": 20, "h": 12 } }
+  ]
+}
+,
+    {
+      "code": "4F",
+      "name": "4階（客室）",
+      "access": "guest",
+      "zones": [
+        { "id": "4F-EAST", "name": "東ウィング", "rect": { "x": 0, "y": 0, "w": 50, "h": 100 } },
+        { "id": "4F-WEST", "name": "西ウィング", "rect": { "x": 50, "y": 0, "w": 50, "h": 100 } }
+      ],
+      "poi": [{ "id": "4F-ELV", "type": "elevator", "name": "エレベーター", "point": { "x": 95, "y": 50 } }],
+      "rooms": [
+        { "room": "401", "type": "suite", "wing": "EAST", "beds": "king", "capacity": 3, "smoking": false, "rect": { "x": 2, "y": 5, "w": 20, "h": 20 } },
+        { "room": "402", "type": "standard_twin", "wing": "EAST", "beds": "twin", "capacity": 2, "smoking": false, "rect": { "x": 2, "y": 27, "w": 20, "h": 12 } },
+        { "room": "403", "type": "standard_double", "wing": "EAST", "beds": "double", "capacity": 2, "smoking": false, "rect": { "x": 2, "y": 41, "w": 20, "h": 12 } },
+        { "room": "404", "type": "standard_twin", "wing": "EAST", "beds": "twin", "capacity": 2, "smoking": true,  "rect": { "x": 2, "y": 55, "w": 20, "h": 12 } },
+        { "room": "405", "type": "standard_double", "wing": "EAST", "beds": "double", "capacity": 2, "smoking": false, "rect": { "x": 2, "y": 69, "w": 20, "h": 12 } },
+        { "room": "406", "type": "standard_twin", "wing": "WEST", "beds": "twin", "capacity": 2, "smoking": false, "rect": { "x": 78, "y": 10, "w": 20, "h": 12 } },
+        { "room": "407", "type": "standard_double", "wing": "WEST", "beds": "double", "capacity": 2, "smoking": false, "rect": { "x": 78, "y": 24, "w": 20, "h": 12 } },
+        { "room": "408", "type": "standard_twin", "wing": "WEST", "beds": "twin", "capacity": 2, "smoking": true,  "rect": { "x": 78, "y": 38, "w": 20, "h": 12 } },
+        { "room": "409", "type": "standard_double", "wing": "WEST", "beds": "double", "capacity": 2, "smoking": false, "rect": { "x": 78, "y": 52, "w": 20, "h": 12 } },
+        { "room": "410", "type": "standard_twin", "wing": "WEST", "beds": "twin", "capacity": 2, "smoking": false, "rect": { "x": 78, "y": 66, "w": 20, "h": 12 } }
+      ]
+    },
+    {
+      "code": "5F",
+      "name": "5階（客室）",
+      "access": "guest",
+      "zones": [
+        { "id": "5F-EAST", "name": "東ウィング", "rect": { "x": 0, "y": 0, "w": 50, "h": 100 } },
+        { "id": "5F-WEST", "name": "西ウィング", "rect": { "x": 50, "y": 0, "w": 50, "h": 100 } }
+      ],
+      "poi": [{ "id": "5F-ELV", "type": "elevator", "name": "エレベーター", "point": { "x": 95, "y": 50 } }],
+      "rooms": [
+        { "room": "501", "type": "suite", "wing": "EAST", "beds": "king", "capacity": 3, "smoking": false, "rect": { "x": 2, "y": 5, "w": 20, "h": 20 } },
+        { "room": "502", "type": "standard_twin", "wing": "EAST", "beds": "twin", "capacity": 2, "smoking": false, "rect": { "x": 2, "y": 27, "w": 20, "h": 12 } },
+        { "room": "503", "type": "standard_double", "wing": "EAST", "beds": "double", "capacity": 2, "smoking": false, "rect": { "x": 2, "y": 41, "w": 20, "h": 12 } },
+        { "room": "504", "type": "standard_twin", "wing": "EAST", "beds": "twin", "capacity": 2, "smoking": true,  "rect": { "x": 2, "y": 55, "w": 20, "h": 12 } },
+        { "room": "505", "type": "standard_double", "wing": "EAST", "beds": "double", "capacity": 2, "smoking": false, "rect": { "x": 2, "y": 69, "w": 20, "h": 12 } },
+        { "room": "506", "type": "standard_twin", "wing": "WEST", "beds": "twin", "capacity": 2, "smoking": false, "rect": { "x": 78, "y": 10, "w": 20, "h": 12 } },
+        { "room": "507", "type": "standard_double", "wing": "WEST", "beds": "double", "capacity": 2, "smoking": false, "rect": { "x": 78, "y": 24, "w": 20, "h": 12 } },
+        { "room": "508", "type": "standard_twin", "wing": "WEST", "beds": "twin", "capacity": 2, "smoking": true,  "rect": { "x": 78, "y": 38, "w": 20, "h": 12 } },
+        { "room": "509", "type": "standard_double", "wing": "WEST", "beds": "double", "capacity": 2, "smoking": false, "rect": { "x": 78, "y": 52, "w": 20, "h": 12 } },
+        { "room": "510", "type": "standard_twin", "wing": "WEST", "beds": "twin", "capacity": 2, "smoking": false, "rect": { "x": 78, "y": 66, "w": 20, "h": 12 } }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+# モデルやキャッシュは絶対コミットしない
+.ollama/
+ollama/weights/
+*.bin
+*.safetensors
+*.gguf
+# 仮想環境・ビルド
+.venv/
+__pycache__/
+dist/
+node_modules/
+# 秘密情報
+.env

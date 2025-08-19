@@ -1,9 +1,9 @@
 # tickets:チェックインを行うための機能
-- 入力：
+- 入力(TicketIn):
   - チケットID
   - チェックイン日時
   - チェックイン場所
-- 出力：
+- 出力(TicketOut)：
   - チェックイン結果（成功/失敗）
   - チェックイン履歴
   - 部屋番号
@@ -14,7 +14,8 @@
 - チェックイン日時、場所を記録
 - チェックイン結果を返す
 
-
+FaqHit:質問対応
+//*LLMに置き換えるのが適切？*//
 
 🖥 サーバー起動方法
 1. 環境変数設定（Tomcatパス）
@@ -29,7 +30,7 @@
 
 3. フロントエンド（Tomcat + JSP）
 - cd frontend
-- mvn package
+- brew install maven
 - cp target/frontend.war "$CATALINA_HOME/webapps/"
 - "$CATALINA_HOME/bin/catalina.sh" start
 - 起動後: http://localhost:8080/frontend/chat.jsp
